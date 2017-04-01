@@ -1,0 +1,16 @@
+{
+  "HEADLINE": "What an awesome module!",
+  "PARAGRAPH": "Srsly!",
+  "PASSED_AS_TEXT": "Hey there! I'm passed as text value!",
+  "PASSED_AS_ATTRIBUTE": "I'm passed as attribute value, cool ha?",
+  "PASSED_AS_INTERPOLATION": "Beginners! I'm interpolated!",
+  "VARIABLE_REPLACEMENT": "Hi {{name}}",
+  "BUTTON_LANG_DE": "German",
+  "BUTTON_LANG_EN": "English",
+  "NO_DB_MENSSAGE": "You dont have any db yet. Click next to go to settings and add a db.",
+  "NO_DB_TITLE": "No Database...",
+  "SETTINGS": "Settings",
+  "DESCRIPTION": "Crie um banco de dados e um usuário....",
+  "OK_DB": "Settings save!",
+  "LOADING": "Loading..."
+}
