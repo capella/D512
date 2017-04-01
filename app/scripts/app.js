@@ -38,7 +38,7 @@ angular
                 controller: 'SettingsCtrl',
                 controllerAs: 'settings'
             })
-            .when('/edit_code', {
+            .when('/edit_code/:id?', {
               templateUrl: 'views/edit_code.html',
               controller: 'EditCodeCtrl',
               controllerAs: 'editCode'

@@ -8,10 +8,7 @@
  * Controller of the d512App
  */
 angular.module('d512App')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    .controller('AboutCtrl', function($scope, myviews) {
+        $scope.data = myviews.all();
+        console.log($scope.data);
+    });

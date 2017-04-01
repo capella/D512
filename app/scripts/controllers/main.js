@@ -8,17 +8,14 @@
  * Controller of the d512App
  */
 angular.module('d512App')
-  .controller('MainCtrl', function (localStorageService, $uibModal, $translate) {
-    var dbInfo = localStorageService.get('dbinfo');
-    var $ctrl = this;
-    if(!dbInfo || dbInfo === '') {
-    console.log(dbInfo);
-    	   $uibModal.open({
-		      animation: $ctrl.animationsEnabled,
-		      ariaLabelledBy: 'modal-title-top',
-		      ariaDescribedBy: 'modal-body-top',
-		      templateUrl: 'views/modal_no_dbinfo.html',
-		      controller: 'ModalNoDbCtrl'
-		    });
-    }
-  });
+    .controller('MainCtrl', function(localStorageService, $uibModal, $translate, myviews, $scope, $location) {
+        var dbInfo = localStorageService.get('dbinfo');
+        var $ctrl = this;
+        if (!dbInfo || dbInfo === '') {
+            $location.path("settings");
+            dialog.showErrorBox("No db set", "Configure seu banco de dados... ");
+        } else {
+            $scope.data = myviews.all();
+            console.log($scope.data);
+        }
+    });

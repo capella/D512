@@ -1,22 +1,22 @@
-<div class="container" >
+<div class="container">
 
-<p translate>DESCRIPTION</p>
+    <p translate>DESCRIPTION</p>
 
-<form ng-show="!load">
-  <div class="form-group" ng-class="{'has-error': error}">
-    <label class="control-label"  for="db">Connection</label>
-    <input type="text" class="form-control form-control-danger"  ng-model="dbinfo" value="{{dbinfo}}" id="db">
-    <small id="emailHelp" class="form-text text-muted">driver://user:pass@hostname/database</small>
-  </div>
+    <form ng-show="!load">
+        <div class="form-group" ng-class="{'has-error': error}">
+            <label class="control-label" for="db">Connection</label>
+            <input type="text" class="form-control form-control-danger" ng-model="dbinfo" id="db">
+            <small id="emailHelp" class="form-text text-muted">driver://user:pass@hostname/database</small>
+        </div>
 
-  <div class="alert alert-danger" role="alert" ng-show="error"><small class="form-text text-muted error">{{erroMsg}}</small></div>
-  <div class="alert alert-success" role="alert" ng-show="ok"><small class="form-text text-muted error" translate>OK_DB</small></div>
+        <div class="alert alert-danger" role="alert" ng-show="error"><small class="form-text text-muted error">{{erroMsg}}</small></div>
+        <div class="alert alert-success" role="alert" ng-show="ok"><small class="form-text text-muted error" translate>OK_DB</small></div>
 
-  <button type="submit" class="btn btn-primary" ng-click="save(dbinfo)">Save</button>
+        <button type="submit" class="btn btn-primary" ng-click="save()">Save</button>
 
-</form>
+    </form>
 
-<div class="progress" ng-show="load">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" translate> LOADING </div>
-</div>
+    <div class="progress" ng-show="load">
+        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" translate> LOADING </div>
+    </div>
 </div>

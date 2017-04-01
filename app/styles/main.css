@@ -84,10 +84,12 @@ body {
 }
 
 .CodeMirror { 
-  height: 50vh;
+  height: 40vh;
   border: 1px solid #eee;
  }
 
 .container {
   margin-top: 50px;
 }
+
+html, body {height: 100%; overflow: hidden}
